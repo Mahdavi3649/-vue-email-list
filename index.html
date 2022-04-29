@@ -11,8 +11,10 @@
 <body>
     <div id="app">
 
-        <ul>
-            <li>Email Address: {{ email }}</li>
+        <ul v-for="mail in arrayEmails" v-show="arrayEmails.length === 10">
+            <li>
+                {{mail}}
+            </li>
         </ul>
 
     </div>
